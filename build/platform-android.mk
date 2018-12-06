@@ -95,11 +95,11 @@ binaries: decdemo encdemo
 
 decdemo: libraries
 #	cd ./codec/build/android/dec && $(NDKROOT)/ndk-build -B NDK_TOOLCHAIN_VERSION=$(NDK_TOOLCHAIN_VERSION) APP_ABI=$(APP_ABI) APP_PLATFORM=$(TARGET) && android update project -t $(TARGET) -p . && ant debug
-	cd ./codec/build/android/dec && $(NDKROOT)/ndk-build -B NDK_TOOLCHAIN_VERSION=$(NDK_TOOLCHAIN_VERSION) APP_ABI=$(APP_ABI) APP_PLATFORM=$(TARGET) && ant debug
+	cd ./codec/build/android/dec && $(NDKROOT)/ndk-build -B NDK_TOOLCHAIN_VERSION=$(NDK_TOOLCHAIN_VERSION) APP_ABI=$(APP_ABI) APP_PLATFORM=$(TARGET)
 
 encdemo: libraries
 #	cd ./codec/build/android/enc && $(NDKROOT)/ndk-build -B NDK_TOOLCHAIN_VERSION=$(NDK_TOOLCHAIN_VERSION) APP_ABI=$(APP_ABI) APP_PLATFORM=$(TARGET) && android update project -t $(TARGET) -p . && ant debug
-	cd ./codec/build/android/enc && $(NDKROOT)/ndk-build -B NDK_TOOLCHAIN_VERSION=$(NDK_TOOLCHAIN_VERSION) APP_ABI=$(APP_ABI) APP_PLATFORM=$(TARGET) && ant debug
+	cd ./codec/build/android/enc && $(NDKROOT)/ndk-build -B NDK_TOOLCHAIN_VERSION=$(NDK_TOOLCHAIN_VERSION) APP_ABI=$(APP_ABI) APP_PLATFORM=$(TARGET)
 
 clean_Android: clean_Android_dec clean_Android_enc
 
